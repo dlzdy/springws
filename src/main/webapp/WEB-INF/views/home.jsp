@@ -75,8 +75,10 @@
     
     function checkHeartBeat(){
 		console.log("checkHeartBeat");
+		setTimeout(checkHeartBeat, 10000);
 	};
-	 function sayHey() {
+	
+	function sayHey() {
 	 	console.log("sending 'Hey guy!'");
 	 	sockjs.send("Hey guy!");
 	};	
