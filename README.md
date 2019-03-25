@@ -1,3 +1,5 @@
+
+
 # Spring-ws
 
 基于SpringMVC实现的支持SockJS的WebSocket工程实例
@@ -42,6 +44,8 @@ var sock = new SockJS(url);
 需要做的事情就是这么多
 
 # 效果展示
+localhost:8080
+
 
 ## 支持WebSocket
 当浏览器和服务器都支持 websocket 的时候，直接使用websocket连接

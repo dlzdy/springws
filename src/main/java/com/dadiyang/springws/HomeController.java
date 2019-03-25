@@ -11,12 +11,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * @date 2018/11/4
  */
 @Controller
-@RequestMapping(value = {"/", "home"})
 public class HomeController {
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping({"/", "sockjs"})
     public String home() {
-        return "home";
+        return "sockjs";
+    }
+    @RequestMapping("websocket")
+    public String websocket() {
+        return "websocket";
     }
 
 }
